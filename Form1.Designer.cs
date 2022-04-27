@@ -44,19 +44,18 @@
             this.employerButton.TabIndex = 4;
             this.employerButton.Text = "Работодатель";
             this.employerButton.UseVisualStyleBackColor = true;
-            
+            this.employerButton.Click += new System.EventHandler(this.EmployerButton_Click);
             // 
             // label1
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(228, 9);
+            this.label1.Location = new System.Drawing.Point(218, 10);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(246, 32);
             this.label1.TabIndex = 5;
             this.label1.Text = "Выберите вашу роль";
-            
             // 
             // emploeeButton
             // 
@@ -99,6 +98,8 @@
             this.Controls.Add(this.emploeeButton);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.employerButton);
+            this.MaximumSize = new System.Drawing.Size(720, 480);
+            this.MinimumSize = new System.Drawing.Size(720, 480);
             this.Name = "Names";
             this.Text = "Employment bureau";
             this.ResumeLayout(false);
