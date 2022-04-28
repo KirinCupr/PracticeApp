@@ -146,7 +146,7 @@
             this.textVacancy.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textVacancy.Location = new System.Drawing.Point(361, 277);
             this.textVacancy.Name = "textVacancy";
-            this.textVacancy.Size = new System.Drawing.Size(263, 35);
+            this.textVacancy.Size = new System.Drawing.Size(331, 35);
             this.textVacancy.TabIndex = 10;
             // 
             // buttonEnter

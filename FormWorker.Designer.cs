@@ -30,17 +30,17 @@
         {
             this.buttonExit = new System.Windows.Forms.Button();
             this.buttonEnter = new System.Windows.Forms.Button();
-            this.labelVacancy = new System.Windows.Forms.Label();
-            this.textVacancy = new System.Windows.Forms.TextBox();
-            this.maskedTextPhoneNumber = new System.Windows.Forms.MaskedTextBox();
-            this.labelNomer = new System.Windows.Forms.Label();
-            this.labelAddress = new System.Windows.Forms.Label();
-            this.textAddress = new System.Windows.Forms.TextBox();
-            this.labelActivityType = new System.Windows.Forms.Label();
-            this.textActivity = new System.Windows.Forms.TextBox();
+            this.labelQualification = new System.Windows.Forms.Label();
+            this.textQualification = new System.Windows.Forms.TextBox();
+            this.labelProfession = new System.Windows.Forms.Label();
+            this.labelPatronymic = new System.Windows.Forms.Label();
+            this.textPatronymic = new System.Windows.Forms.TextBox();
             this.labelName = new System.Windows.Forms.Label();
             this.textName = new System.Windows.Forms.TextBox();
+            this.labelLastname = new System.Windows.Forms.Label();
+            this.textLastname = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.textProfession = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // buttonExit
@@ -67,96 +67,87 @@
             this.buttonEnter.Text = "Подтвердить";
             this.buttonEnter.UseVisualStyleBackColor = false;
             // 
-            // labelVacancy
+            // labelQualification
             // 
-            this.labelVacancy.AutoSize = true;
-            this.labelVacancy.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelVacancy.Location = new System.Drawing.Point(12, 280);
-            this.labelVacancy.Name = "labelVacancy";
-            this.labelVacancy.Size = new System.Drawing.Size(107, 30);
-            this.labelVacancy.TabIndex = 24;
-            this.labelVacancy.Text = "Вакансия:";
+            this.labelQualification.AutoSize = true;
+            this.labelQualification.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelQualification.Location = new System.Drawing.Point(12, 280);
+            this.labelQualification.Name = "labelQualification";
+            this.labelQualification.Size = new System.Drawing.Size(244, 30);
+            this.labelQualification.TabIndex = 24;
+            this.labelQualification.Text = "Уровень квалификации:";
             // 
-            // textVacancy
+            // textQualification
             // 
-            this.textVacancy.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textVacancy.Location = new System.Drawing.Point(361, 277);
-            this.textVacancy.Name = "textVacancy";
-            this.textVacancy.Size = new System.Drawing.Size(263, 35);
-            this.textVacancy.TabIndex = 23;
+            this.textQualification.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textQualification.Location = new System.Drawing.Point(361, 277);
+            this.textQualification.Name = "textQualification";
+            this.textQualification.Size = new System.Drawing.Size(331, 35);
+            this.textQualification.TabIndex = 23;
             // 
-            // maskedTextPhoneNumber
+            // labelProfession
             // 
-            this.maskedTextPhoneNumber.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.maskedTextPhoneNumber.Location = new System.Drawing.Point(361, 221);
-            this.maskedTextPhoneNumber.Mask = "+7 (999) 000-0000";
-            this.maskedTextPhoneNumber.Name = "maskedTextPhoneNumber";
-            this.maskedTextPhoneNumber.Size = new System.Drawing.Size(175, 35);
-            this.maskedTextPhoneNumber.TabIndex = 22;
+            this.labelProfession.AutoSize = true;
+            this.labelProfession.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelProfession.Location = new System.Drawing.Point(12, 224);
+            this.labelProfession.Name = "labelProfession";
+            this.labelProfession.Size = new System.Drawing.Size(125, 30);
+            this.labelProfession.TabIndex = 21;
+            this.labelProfession.Text = "Профессия:";
             // 
-            // labelNomer
+            // labelPatronymic
             // 
-            this.labelNomer.AutoSize = true;
-            this.labelNomer.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelNomer.Location = new System.Drawing.Point(12, 224);
-            this.labelNomer.Name = "labelNomer";
-            this.labelNomer.Size = new System.Drawing.Size(180, 30);
-            this.labelNomer.TabIndex = 21;
-            this.labelNomer.Text = "Номер телефона:";
+            this.labelPatronymic.AutoSize = true;
+            this.labelPatronymic.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelPatronymic.Location = new System.Drawing.Point(12, 168);
+            this.labelPatronymic.Name = "labelPatronymic";
+            this.labelPatronymic.Size = new System.Drawing.Size(108, 30);
+            this.labelPatronymic.TabIndex = 20;
+            this.labelPatronymic.Text = "Отчество:";
             // 
-            // labelAddress
+            // textPatronymic
             // 
-            this.labelAddress.AutoSize = true;
-            this.labelAddress.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelAddress.Location = new System.Drawing.Point(12, 168);
-            this.labelAddress.Name = "labelAddress";
-            this.labelAddress.Size = new System.Drawing.Size(76, 30);
-            this.labelAddress.TabIndex = 20;
-            this.labelAddress.Text = "Адрес:";
-            // 
-            // textAddress
-            // 
-            this.textAddress.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textAddress.Location = new System.Drawing.Point(361, 165);
-            this.textAddress.Name = "textAddress";
-            this.textAddress.Size = new System.Drawing.Size(331, 35);
-            this.textAddress.TabIndex = 19;
-            // 
-            // labelActivityType
-            // 
-            this.labelActivityType.AutoSize = true;
-            this.labelActivityType.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelActivityType.Location = new System.Drawing.Point(12, 112);
-            this.labelActivityType.Name = "labelActivityType";
-            this.labelActivityType.Size = new System.Drawing.Size(189, 30);
-            this.labelActivityType.TabIndex = 18;
-            this.labelActivityType.Text = "Вид деятельности:";
-            // 
-            // textActivity
-            // 
-            this.textActivity.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textActivity.Location = new System.Drawing.Point(361, 109);
-            this.textActivity.Name = "textActivity";
-            this.textActivity.Size = new System.Drawing.Size(331, 35);
-            this.textActivity.TabIndex = 17;
+            this.textPatronymic.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textPatronymic.Location = new System.Drawing.Point(361, 165);
+            this.textPatronymic.Name = "textPatronymic";
+            this.textPatronymic.Size = new System.Drawing.Size(331, 35);
+            this.textPatronymic.TabIndex = 19;
             // 
             // labelName
             // 
             this.labelName.AutoSize = true;
             this.labelName.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelName.Location = new System.Drawing.Point(12, 56);
+            this.labelName.Location = new System.Drawing.Point(12, 112);
             this.labelName.Name = "labelName";
-            this.labelName.Size = new System.Drawing.Size(344, 30);
-            this.labelName.TabIndex = 16;
-            this.labelName.Text = "Название компании/организации:";
+            this.labelName.Size = new System.Drawing.Size(60, 30);
+            this.labelName.TabIndex = 18;
+            this.labelName.Text = "Имя:";
             // 
             // textName
             // 
             this.textName.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textName.Location = new System.Drawing.Point(361, 53);
+            this.textName.Location = new System.Drawing.Point(361, 109);
             this.textName.Name = "textName";
             this.textName.Size = new System.Drawing.Size(331, 35);
-            this.textName.TabIndex = 15;
+            this.textName.TabIndex = 17;
+            // 
+            // labelLastname
+            // 
+            this.labelLastname.AutoSize = true;
+            this.labelLastname.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelLastname.Location = new System.Drawing.Point(12, 56);
+            this.labelLastname.Name = "labelLastname";
+            this.labelLastname.Size = new System.Drawing.Size(105, 30);
+            this.labelLastname.TabIndex = 16;
+            this.labelLastname.Text = "Фамилия:";
+            // 
+            // textLastname
+            // 
+            this.textLastname.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textLastname.Location = new System.Drawing.Point(361, 53);
+            this.textLastname.Name = "textLastname";
+            this.textLastname.Size = new System.Drawing.Size(331, 35);
+            this.textLastname.TabIndex = 15;
             // 
             // label1
             // 
@@ -169,23 +160,31 @@
             this.label1.TabIndex = 14;
             this.label1.Text = "Введите ваши данные:";
             // 
+            // textProfession
+            // 
+            this.textProfession.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textProfession.Location = new System.Drawing.Point(361, 221);
+            this.textProfession.Name = "textProfession";
+            this.textProfession.Size = new System.Drawing.Size(331, 35);
+            this.textProfession.TabIndex = 27;
+            // 
             // FormWorker
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(730, 497);
+            this.Controls.Add(this.textProfession);
             this.Controls.Add(this.buttonExit);
             this.Controls.Add(this.buttonEnter);
-            this.Controls.Add(this.labelVacancy);
-            this.Controls.Add(this.textVacancy);
-            this.Controls.Add(this.maskedTextPhoneNumber);
-            this.Controls.Add(this.labelNomer);
-            this.Controls.Add(this.labelAddress);
-            this.Controls.Add(this.textAddress);
-            this.Controls.Add(this.labelActivityType);
-            this.Controls.Add(this.textActivity);
+            this.Controls.Add(this.labelQualification);
+            this.Controls.Add(this.textQualification);
+            this.Controls.Add(this.labelProfession);
+            this.Controls.Add(this.labelPatronymic);
+            this.Controls.Add(this.textPatronymic);
             this.Controls.Add(this.labelName);
             this.Controls.Add(this.textName);
+            this.Controls.Add(this.labelLastname);
+            this.Controls.Add(this.textLastname);
             this.Controls.Add(this.label1);
             this.MaximumSize = new System.Drawing.Size(746, 536);
             this.MinimumSize = new System.Drawing.Size(746, 536);
@@ -200,16 +199,16 @@
 
         private Button buttonExit;
         private Button buttonEnter;
-        private Label labelVacancy;
-        private TextBox textVacancy;
-        private MaskedTextBox maskedTextPhoneNumber;
-        private Label labelNomer;
-        private Label labelAddress;
-        private TextBox textAddress;
-        private Label labelActivityType;
-        private TextBox textActivity;
+        private Label labelQualification;
+        private TextBox textQualification;
+        private Label labelProfession;
+        private Label labelPatronymic;
+        private TextBox textPatronymic;
         private Label labelName;
         private TextBox textName;
+        private Label labelLastname;
+        private TextBox textLastname;
         private Label label1;
+        private TextBox textProfession;
     }
 }

@@ -25,6 +25,10 @@ namespace PracticeApp
         private void buttonExit_Click(object sender, EventArgs e)
         {
             this.Close();
+
+            Names names = new Names();
+            names.Show();
+
             
         }
 
