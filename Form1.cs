@@ -11,7 +11,11 @@ namespace PracticeApp
         {
             FormEmployer employer = new FormEmployer();
             employer.Show();
-            this.Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

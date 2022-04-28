@@ -33,6 +33,7 @@
             this.emploeeButton = new System.Windows.Forms.Button();
             this.managerButton = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // employerButton
@@ -88,11 +89,22 @@
             this.label2.TabIndex = 8;
             this.label2.Text = "(Не для общественного использования)\r\n";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(555, 355);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(131, 66);
+            this.button1.TabIndex = 9;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Names
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(704, 441);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.managerButton);
             this.Controls.Add(this.emploeeButton);
@@ -113,5 +125,6 @@
         private Button emploeeButton;
         private Button managerButton;
         private Label label2;
+        private Button button1;
     }
 }

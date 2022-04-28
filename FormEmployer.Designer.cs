@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.textName = new System.Windows.Forms.TextBox();
             this.labelName = new System.Windows.Forms.Label();
@@ -41,6 +42,8 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.buttonEnter = new System.Windows.Forms.Button();
             this.buttonExit = new System.Windows.Forms.Button();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -50,9 +53,9 @@
             this.label1.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(200, 2);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(301, 37);
+            this.label1.Size = new System.Drawing.Size(296, 37);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Введите выши данные:";
+            this.label1.Text = "Введите ваши данные:";
             // 
             // textName
             // 
@@ -62,6 +65,7 @@
             this.textName.Name = "textName";
             this.textName.Size = new System.Drawing.Size(200, 35);
             this.textName.TabIndex = 1;
+            this.textName.TextChanged += new System.EventHandler(this.textName_TextChanged);
             // 
             // labelName
             // 
@@ -160,6 +164,7 @@
             this.buttonEnter.TabIndex = 12;
             this.buttonEnter.Text = "Подтвердить";
             this.buttonEnter.UseVisualStyleBackColor = false;
+            this.buttonEnter.Click += new System.EventHandler(this.buttonEnter_Click);
             // 
             // buttonExit
             // 
@@ -173,6 +178,10 @@
             this.buttonExit.Text = "Выход";
             this.buttonExit.UseVisualStyleBackColor = false;
             this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
             // 
             // FormEmployer
             // 
@@ -195,6 +204,7 @@
             this.Name = "FormEmployer";
             this.Text = "FormEmployer";
             this.Load += new System.EventHandler(this.FormEmployer_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -215,5 +225,6 @@
         private TextBox textBox3;
         private Button buttonEnter;
         private Button buttonExit;
+        private ErrorProvider errorProvider1;
     }
 }
