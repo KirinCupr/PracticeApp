@@ -37,8 +37,18 @@ namespace PracticeApp
         {
             using (StreamWriter writer = new StreamWriter("test.TXT", true))
             {
-                if (textName.Text != "")
+                if (textName.Text != "" || textActivity.Text != "" || textAddress.Text != ""
+                     || textVacancy.Text != "")
+                {
+                    MessageBox.Show("Подтвердить корректность данных?");
                     await writer.WriteLineAsync(textName.Text);
+                    await writer.WriteLineAsync(textActivity.Text);
+                    await writer.WriteLineAsync(textAddress.Text);
+                    await writer.WriteLineAsync(maskedTextPhoneNumber.Text);
+                    await writer.WriteLineAsync(textVacancy.Text);
+                    Close();
+                }
+
                 else
                 {
                     MessageBox.Show("ТЫ что, кретин?!??!?!\nCnh, бля, строки надо заполнять!!!!! ъуъ", "Error :)");
