@@ -24,7 +24,7 @@ namespace PracticeApp
 
         private async void buttonEnter_Click(object sender, EventArgs e)
         {
-            using (StreamWriter writer = new StreamWriter("test.TXT", true))
+            using (StreamWriter writer = new StreamWriter("workers.TXT", true))
             {
                 if (textLastname.Text != "" || textName.Text != "" || textPatronymic.Text != ""
                      || textProfession.Text != "" || textQualification.Text != "")
@@ -41,7 +41,7 @@ namespace PracticeApp
                 else
                 {
                     MessageBox.Show("ТЫ что, кретин?!??!?!\nCnh, бля, строки надо заполнять!!!!! ъуъ", "Error :)");
-                    ErrorForm gay = new ErrorForm("Ты ведь понимаешь, что в строки, которые, ОЧЕВИДНО, предназначены для ввода информации надо что-то ввести?!\nИ ты, fucking slave, решил пренебречь этим правилом!!!!!!!\nТЫ ВООБЩЕ В СВОЁМ CUM КУПАЕШЬСЯ ИЛИ ПРОСТО РЕШИЛ СОВОКУПИТЬСЯ СО МНОЙ!!!!\nУ тебя два варианта: надеть leather glove и сделать фистинг, или перестать быть геем!!!");
+                    ErrorForm gay = new ErrorForm("Ты ведь понимаешь, что в поля, которые, ОЧЕВИДНО, предназначены для ввода информации надо что-то ввести?!\nИ ты, fucking slave, решил пренебречь этим правилом!!!!!!!\nТЫ ВООБЩЕ В СВОЁМ CUM КУПАЕШЬСЯ ИЛИ ПРОСТО РЕШИЛ СОВОКУПИТЬСЯ СО МНОЙ!!!!\nУ тебя два варианта: надеть leather glove и сделать фистинг, или перестать быть геем!!!");
                     gay.Show();
                 }
 
