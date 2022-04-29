@@ -24,7 +24,7 @@ namespace PracticeApp
 
         private async void buttonEnter_Click(object sender, EventArgs e)
         {
-            using (StreamWriter writer = new StreamWriter("workers.TXT", true))
+            using (StreamWriter writer = new StreamWriter("workersList.TXT", true))
             {
                 if (textLastname.Text != "" || textName.Text != "" || textPatronymic.Text != ""
                      || textProfession.Text != "" || textQualification.Text != "")
