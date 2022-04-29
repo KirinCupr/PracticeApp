@@ -68,6 +68,7 @@
             this.emploeeButton.TabIndex = 6;
             this.emploeeButton.Text = "Работник";
             this.emploeeButton.UseVisualStyleBackColor = true;
+            this.emploeeButton.Click += new System.EventHandler(this.emploeeButton_Click);
             // 
             // managerButton
             // 

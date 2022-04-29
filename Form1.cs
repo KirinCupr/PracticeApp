@@ -17,5 +17,11 @@ namespace PracticeApp
         {
             this.Close();
         }
+
+        private void emploeeButton_Click(object sender, EventArgs e)
+        {
+            FormWorker worker = new FormWorker();
+            worker.Show();
+        }
     }
 }

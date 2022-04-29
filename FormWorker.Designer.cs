@@ -54,6 +54,7 @@
             this.buttonExit.TabIndex = 26;
             this.buttonExit.Text = "Выход";
             this.buttonExit.UseVisualStyleBackColor = false;
+            this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
             // 
             // buttonEnter
             // 
@@ -66,6 +67,7 @@
             this.buttonEnter.TabIndex = 25;
             this.buttonEnter.Text = "Подтвердить";
             this.buttonEnter.UseVisualStyleBackColor = false;
+            this.buttonEnter.Click += new System.EventHandler(this.buttonEnter_Click);
             // 
             // labelQualification
             // 
