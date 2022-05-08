@@ -80,6 +80,7 @@
             this.managerButton.TabIndex = 7;
             this.managerButton.Text = "Менеджер";
             this.managerButton.UseVisualStyleBackColor = true;
+            this.managerButton.Click += new System.EventHandler(this.managerButton_Click);
             // 
             // label2
             // 

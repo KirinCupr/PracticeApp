@@ -48,7 +48,20 @@ namespace PracticeApp
             this.BackgroundImage = Image.FromFile(Filename);
             this.BackgroundImageLayout = ImageLayout.Stretch;
             label1.Text = "Внезапно перед вашим лицом возникает некая чёрная фигура.\n'ТОЛЬКО НЕ ОН' - думаете Вы.\nЭто - ЧЁРНЫЙ ВЛАСТЕЛИН, самый страшный из Dungeon Master'ов!!!\nВаш пульс повывшается и в голове у Вас только одна мысль - бежать, и как можно быстрее!";
-            ((Button)sender).Text = "Начать бежать!";
+            
+            Button cum2 = new Button();
+            Controls.Add(cum2);
+            cum2.DoubleClick += cum2_DoubleClick;
+            cum2.Text = "Начать бежать!\n(В панике)";
+            cum2.Location = new Point(20, 20);
+            cum2.Size = new Size(30, 300);
+            cum2.Show();
+
+        }
+
+        private void cum2_DoubleClick(object sender, EventArgs e)
+        {
+            
         }
     }
 }

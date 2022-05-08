@@ -35,7 +35,7 @@ namespace PracticeApp
 
         private async void buttonEnter_Click(object sender, EventArgs e)
         {
-            using (StreamWriter writer = new StreamWriter("test.TXT", true))
+            using (StreamWriter writer = new StreamWriter("employers.TXT", true))
             {
                 if (textName.Text != "" || textActivity.Text != "" || textAddress.Text != ""
                      || textVacancy.Text != "")
