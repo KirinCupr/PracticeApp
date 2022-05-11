@@ -25,7 +25,7 @@ namespace PracticeApp
         private void buttonExit_Click(object sender, EventArgs e)
         {
             this.Close();
-            
+
         }
 
         private void textName_TextChanged(object sender, EventArgs e)
@@ -55,7 +55,7 @@ namespace PracticeApp
                     ErrorForm gay = new ErrorForm("Ты ведь понимаешь, что в строки, которые, ОЧЕВИДНО, предназначены для ввода информации надо что-то ввести?!\nИ ты, fucking slave, решил пренебречь этим правилом!!!!!!!\nТЫ ВООБЩЕ В СВОЁМ CUM КУПАЕШЬСЯ ИЛИ ПРОСТО РЕШИЛ СОВОКУПИТЬСЯ СО МНОЙ!!!!\nУ тебя два варианта: надеть leather glove и сделать фистинг, или перестать быть геем!!!");
                     gay.Show();
                 }
-                    
+
             }
         }
     }

@@ -23,5 +23,11 @@ namespace PracticeApp
             FormWorker worker = new FormWorker();
             worker.Show();
         }
+
+        private void managerButton_Click(object sender, EventArgs e)
+        {
+            FormManager manager = new FormManager();
+            manager.Show();
+        }
     }
 }
